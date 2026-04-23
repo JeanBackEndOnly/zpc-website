@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zamboanga Puericulture Center - Excellence in maternal and child healthcare since 1917. Serving Zamboanga City with compassion and quality care.">
+    <meta name="keywords" content="maternity hospital, child healthcare, puericulture, Zamboanga, pediatric care">
+    <title>Zamboanga Puericulture Center | Maternal & Child Healthcare</title>
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- AOS Animation CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/system_images/pueri-logo.png">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+        
+        body {
+            background: #f8fafc;
+            color: #1e293b;
+        }
+        
+        /* Clean, professional theme */
+        :root {
+            --primary: #0ea5e9;
+            --primary-dark: #0284c7;
+            --secondary: #f59e0b;
+            --accent: #ef4444;
+            --light: #f8fafc;
+            --dark: #0f172a;
+            --gray: #64748b;
+        }
+        
+        .navbar {
+            background: rgba(255, 255, 255, 0.95) !important;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            padding: 1rem 0;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--dark) !important;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .navbar-brand img {
+            height: 45px;
+        }
+        
+        .nav-link {
+            color: var(--gray) !important;
+            font-weight: 500;
+            padding: 0.5rem 1.25rem !important;
+            transition: color 0.2s ease;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary) !important;
+        }
+        
+        .btn-primary {
+            background: var(--primary);
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: var(--dark);
+            border: 1.5px solid #e2e8f0;
+            padding: 0.75rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            background: rgba(14, 165, 233, 0.05);
+        }
+        
+        .hero {
+            padding: 120px 0 80px;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f8fafc 100%);
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--dark);
+            line-height: 1.2;
+        }
+        
+        .hero .highlight {
+            color: var(--primary);
+        }
+        
+        .stat-card {
+            text-align: center;
+            padding: 1.5rem;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+        
+        .stat-label {
+            color: var(--gray);
+            font-weight: 500;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            color: var(--primary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .mission-box {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+            border-color: var(--primary);
+        }
+        
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: #f0f9ff;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-icon i {
+            font-size: 1.75rem;
+            color: var(--primary);
+        }
+        
+        .contact-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+        
+        .contact-icon {
+            width: 45px;
+            height: 45px;
+            background: #f0f9ff;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .contact-icon i {
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+        
+        .footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+        
+        .footer a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        
+        .footer a:hover {
+            color: white;
+        }
+        
+        /* Map container */
+        .map-container {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .navbar-brand span {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="assets/system_images/pueri-logo.png" alt="ZPC Logo">
+            <span>Zamboanga Puericulture Center</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <i class="fas fa-bars fs-4"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-3">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#facility">Our Facility</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                <h1 class="mb-4">
+                    Where Every <span class="highlight">Mother & Child</span><br>
+                    Receives Compassionate Care
+                </h1>
+                <p class="lead text-secondary mb-5" style="max-width: 700px; margin: 0 auto;">
+                    Zamboanga's premier maternal and child healthcare facility, providing quality medical services 
+                    to underserved communities for over a century.
+                </p>
+                <div class="d-flex flex-wrap gap-3 justify-content-center">
+                    <a href="#about" class="btn btn-primary px-5 py-3">Discover More</a>
+                    <a href="#contact" class="btn btn-outline px-5 py-3">Contact Us</a>
+                </div>
+                
+                <!-- Stats -->
+                <div class="row mt-5 pt-5">
+                    <div class="col-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Years of Service</div>
+                    </div>
+                    <div class="col-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-number">250+</div>
+                        <div class="stat-label">Daily Patients</div>
+                    </div>
+                    <div class="col-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-number">10k+</div>
+                        <div class="stat-label">Families Served</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mission Section -->
+<section id="about" class="py-5 py-lg-6">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6" data-aos="fade-right">
+                <span class="section-subtitle">Our Purpose</span>
+                <h2 class="section-title">Dedicated to Community Health</h2>
+                <div class="mission-box">
+                    <p class="mb-4" style="font-size: 1.1rem; line-height: 1.8;">
+                        We are working to combat the wage of poverty and suffering from disease and death in our communities. 
+                        Our mission is to improve the health and well-being of our children, women, and families through 
+                        comprehensive programs and services.
+                    </p>
+                    <p class="mb-4" style="line-height: 1.8; color: #475569;">
+                        We are dedicated to providing high-quality medical care and support to everyone who needs it. 
+                        Our commitment extends to building a more just and equitable society for all of our people.
+                    </p>
+                    <p style="line-height: 1.8; color: #475569;">
+                        We envision a world where no child goes without access to quality medical care and essential services. 
+                        Through dedication and community partnership, we're making this vision a reality every day.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <span class="section-subtitle">Our Values</span>
+                <h2 class="section-title">What Drives Us</h2>
+                <div class="mission-box">
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-3"><i class="fas fa-heart text-primary me-2"></i>Compassion</h5>
+                        <p class="text-secondary">We treat every patient with dignity, respect, and genuine care.</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-3"><i class="fas fa-hand-holding-heart text-primary me-2"></i>Accessibility</h5>
+                        <p class="text-secondary">Quality healthcare should be available to everyone, regardless of economic status.</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-3"><i class="fas fa-users text-primary me-2"></i>Community</h5>
+                        <p class="text-secondary">We strengthen families and build healthier communities together.</p>
+                    </div>
+                    <div>
+                        <h5 class="fw-bold mb-3"><i class="fas fa-star text-primary me-2"></i>Excellence</h5>
+                        <p class="text-secondary">Continuous improvement in medical care and patient experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <span class="section-subtitle">What We Offer</span>
+            <h2 class="section-title">Comprehensive Healthcare Services</h2>
+            <p class="text-secondary mx-auto" style="max-width: 600px;">Specialized medical care for mothers and children at every stage.</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-female"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Maternity Care</h5>
+                    <p class="text-secondary">Comprehensive prenatal, birthing, and postnatal services for safe deliveries.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Pediatric Care</h5>
+                    <p class="text-secondary">Specialized medical attention for infants, children, and adolescents.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Out-Patient Services</h5>
+                    <p class="text-secondary">General consultations serving 250+ patients daily with minimal wait times.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-piggy-bank"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Alcancia de Parto</h5>
+                    <p class="text-secondary">Savings program helping families prepare financially for childbirth.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lungs"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">TB Program</h5>
+                    <p class="text-secondary">Integrated tuberculosis screening and treatment with maternal care.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Lying-in Clinics</h5>
+                    <p class="text-secondary">Expanding network bringing quality maternal care closer to communities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Facility Section -->
+<section id="facility" class="py-5">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <span class="section-subtitle">Our Facility</span>
+            <h2 class="section-title">Modern Healthcare Infrastructure</h2>
+            <p class="text-secondary mx-auto" style="max-width: 600px;">State-of-the-art facilities designed for optimal patient care.</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card text-center">
+                    <i class="fas fa-calendar-alt fa-2x text-primary mb-3"></i>
+                    <h3 class="fw-bold mb-2">1917</h3>
+                    <p class="text-secondary">Established</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card text-center">
+                    <i class="fas fa-users fa-2x text-primary mb-3"></i>
+                    <h3 class="fw-bold mb-2">250+</h3>
+                    <p class="text-secondary">Daily Capacity</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card text-center">
+                    <i class="fas fa-map-marker-alt fa-2x text-primary mb-3"></i>
+                    <h3 class="fw-bold mb-2">Region's Only</h3>
+                    <p class="text-secondary">Puericulture Center</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-card text-center">
+                    <i class="fas fa-clock fa-2x text-primary mb-3"></i>
+                    <h3 class="fw-bold mb-2">24/7</h3>
+                    <p class="text-secondary">Emergency Care</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-5" data-aos="fade-right">
+                <span class="section-subtitle">Get in Touch</span>
+                <h2 class="section-title">Connect With Our Team</h2>
+                <p class="text-secondary mb-4">Have questions about our services? Our staff is here to assist you.</p>
+                
+                <div class="contact-card">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <p class="small text-secondary mb-1">PHONE</p>
+                            <p class="fw-semibold mb-0">(062) 991-2345</p>
+                            <p class="small text-secondary">Mon-Fri, 8am-5pm</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div>
+                            <p class="small text-secondary mb-1">MOBILE</p>
+                            <p class="fw-semibold mb-0">+63 912 345 6789</p>
+                            <p class="small text-secondary">Available 24/7 for emergencies</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p class="small text-secondary mb-1">EMAIL</p>
+                            <p class="fw-semibold mb-0">zpc144hr@gmail.com</p>
+                            <p class="small text-secondary">Response within 24 hours</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <p class="small text-secondary mb-1">ADDRESS</p>
+                            <p class="fw-semibold mb-0">La Purisima Street, Zamboanga City, 7000</p>
+                            <p class="small text-secondary">Visit us during business hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-7" data-aos="fade-left">
+                <div class="contact-card h-100">
+                    <h5 class="fw-bold mb-4">Location & Hours</h5>
+                    <!-- Accurate Google Map Embed -->
+                    <div class="map-container ratio ratio-16x9 mb-4">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.800693795701!2d122.0730394!3d6.9071992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3250426b2b2d3f29%3A0x6b4ede3b0b21729!2sZamboanga%20Puericulture%20Center%20Maternity%20Lying-in%20Hospital!5e0!3m2!1sen!2sph!4v1745446123456!5m2!1sen!2sph" 
+                            width="600" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <h6 class="fw-bold">Operating Hours</h6>
+                            <p class="text-secondary small mb-0">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                            <p class="text-secondary small mb-0">Saturday: 8:00 AM - 12:00 PM</p>
+                            <p class="text-secondary small">Sunday: Closed</p>
+                        </div>
+                        <div class="col-6">
+                            <h6 class="fw-bold">Emergency Services</h6>
+                            <p class="text-secondary small">Available 24/7 for maternity emergencies. Call our hotline.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-5 mb-4 mb-lg-0">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                    <img src="assets/system_images/pueri-logo.png" alt="Logo" height="45">
+                    <div>
+                        <h5 class="fw-bold mb-0 text-white">Zamboanga Puericulture Center</h5>
+                        <small class="text-white-50">Org. 144, Inc.</small>
+                    </div>
+                </div>
+                <p class="text-white-50 mt-3">Providing quality healthcare and nurturing environment for mothers and children since 1917. Your trusted partner in family health.</p>
+            </div>
+            
+            <div class="col-6 col-lg-2">
+                <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#home">Home</a></li>
+                    <li class="mb-2"><a href="#about">About Us</a></li>
+                    <li class="mb-2"><a href="#services">Services</a></li>
+                    <li class="mb-2"><a href="#facility">Facility</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-6 col-lg-2">
+                <h6 class="text-white fw-bold mb-3">Resources</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#">Patient Info</a></li>
+                    <li class="mb-2"><a href="#">Medical Records</a></li>
+                    <li class="mb-2"><a href="#">Insurance</a></li>
+                    <li class="mb-2"><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-3">
+                <h6 class="text-white fw-bold mb-3">Connect With Us</h6>
+                <div class="d-flex gap-3 mb-3">
+                    <a href="#" class="text-white-50 fs-5"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white-50 fs-5"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white-50 fs-5"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p class="text-white-50 small mb-0">Follow us for updates and health tips.</p>
+            </div>
+        </div>
+        
+        <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+        
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-white-50 small mb-0">&copy; 2026 Zamboanga Puericulture Center Org. 144, Inc. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#" class="text-white-50 small me-3">Privacy Policy</a>
+                <a href="#" class="text-white-50 small me-3">Terms of Service</a>
+                <a href="#" class="text-white-50 small">Accessibility</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS Animation JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+    // Initialize AOS animations
+    AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100,
+        easing: 'ease-out-cubic'
+    });
+    
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#' || targetId === '') return;
+            
+            const target = document.querySelector(targetId);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                
+                // Close mobile menu
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarCollapse.classList.contains('show')) {
+                    navbarCollapse.classList.remove('show');
+                }
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
