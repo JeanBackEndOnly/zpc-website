@@ -256,6 +256,12 @@
 
         /* Mobile navbar fixes */
         @media (max-width: 991px) {
+            .navbar-brand-media{
+                display: flex !important;
+            }
+            navbar-brand{
+                display: none !important;
+            }
             .navbar-brand img{
                 width: 35px !important;
                 height: 35px !important;
