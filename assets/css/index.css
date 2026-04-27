@@ -257,8 +257,8 @@
         /* Mobile navbar fixes */
         @media (max-width: 991px) {
             .navbar-brand img{
-                width: 40px !important;
-                height: 40px !important;
+                width: 35px !important;
+                height: 35px !important;
             }
             .navbar {
                 padding: 0.75rem 0;
