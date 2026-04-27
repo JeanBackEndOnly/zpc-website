@@ -259,6 +259,13 @@
             .navbar-brand-media{
                 display: flex !important;
             }
+            .navbar-brand-media {
+                font-weight: 700;
+                color: var(--dark) !important;
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+            }
             .navbar-brand{
                 display: none !important;
             }
