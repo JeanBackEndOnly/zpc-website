@@ -256,9 +256,9 @@
 
         /* Mobile navbar fixes */
         @media (max-width: 991px) {
-            .zpc-logo{
-                width: 40px;
-                height: 40px;
+            .navbar-brand img{
+                width: 40px !important;
+                height: 40px !important;
             }
             .navbar {
                 padding: 0.75rem 0;
