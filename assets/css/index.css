@@ -259,10 +259,10 @@
             .navbar-brand-media{
                 display: flex !important;
             }
-            navbar-brand{
+            .navbar-brand{
                 display: none !important;
             }
-            .navbar-brand img{
+            .navbar-brand-media img{
                 width: 35px !important;
                 height: 35px !important;
             }
