@@ -253,9 +253,12 @@
         .navbar-toggler:focus {
             box-shadow: none;
         }
-
+        
         /* Mobile navbar fixes */
         @media (max-width: 991px) {
+            html{
+                overflow-x: hidden !important;
+            }
             .navbar-brand-media{
                 display: flex !important;
             }
@@ -265,6 +268,7 @@
                 display: flex;
                 align-items: center;
                 gap: 0.75rem;
+                text-decoration: none !important;
             }
             .navbar-brand{
                 display: none !important;
@@ -283,6 +287,10 @@
                 padding: 1rem;
                 box-shadow: 0 8px 24px rgba(0,0,0,0.1);
                 margin-top: 0.75rem;
+            }
+
+            .navbar{
+                width: 100vw !important;
             }
             
             .navbar-nav {
