@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <meta name="description" content="Zamboanga Puericulture Center - Excellence in maternal and child healthcare since 1917. Serving Zamboanga City with compassion and quality care.">
     <meta name="keywords" content="maternity hospital, child healthcare, puericulture, Zamboanga, pediatric care">
@@ -16,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- AOS Animation CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- Lightbox for image gallery -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/system_images/pueri-logo.png">
 
     <link rel="stylesheet" href="assets/css/index.css">
@@ -41,6 +42,7 @@
                 <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
                 <li class="nav-item"><a class="nav-link" href="#facility">Our Facility</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
@@ -52,22 +54,22 @@
 <section id="home" class="hero">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+            <div class="col-lg-6" data-aos="fade-right">
                 <h1 class="mb-4">
                     Where Every <span class="highlight">Mother & Child</span><br>
                     Receives Compassionate Care
                 </h1>
-                <p class="lead text-secondary mb-5" style="max-width: 700px; margin: 0 auto;">
+                <p class="lead text-secondary mb-5">
                     Zamboanga's premier maternal and child healthcare facility, providing quality medical services 
                     to underserved communities for over a century.
                 </p>
-                <div class="d-flex flex-wrap gap-3 justify-content-center">
+                <div class="d-flex flex-wrap gap-3">
                     <a href="#about" class="btn btn-primary px-5 py-3">Discover More</a>
                     <a href="#contact" class="btn btn-outline px-5 py-3">Contact Us</a>
                 </div>
                 
                 <!-- Stats -->
-                <div class="row mt-5 pt-5">
+                <div class="row mt-5">
                     <div class="col-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="stat-number">100+</div>
                         <div class="stat-label">Years of Service</div>
@@ -82,12 +84,15 @@
                     </div>
                 </div>
             </div>
+            <div class="col-lg-6 text-center" data-aos="fade-left">
+                <img src="assets/system_images/hospital-front.jpg" alt="Zamboanga Puericulture Center" class="hero-image shadow-lg">
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Mission Section -->
-<section id="about" class="py-5 py-lg-6">
+<!-- About Section -->
+<section id="about" class="py-5">
     <div class="container">
         <div class="row g-5">
             <div class="col-lg-6" data-aos="fade-right">
@@ -147,59 +152,42 @@
         <div class="row g-4">
             <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-female"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-female"></i></div>
                     <h5 class="fw-bold mb-3">Maternity Care</h5>
                     <p class="text-secondary">Comprehensive prenatal, birthing, and postnatal services for safe deliveries.</p>
                 </div>
             </div>
-            
             <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-baby"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-baby"></i></div>
                     <h5 class="fw-bold mb-3">Pediatric Care</h5>
                     <p class="text-secondary">Specialized medical attention for infants, children, and adolescents.</p>
                 </div>
             </div>
-            
             <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-stethoscope"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-stethoscope"></i></div>
                     <h5 class="fw-bold mb-3">Out-Patient Services</h5>
                     <p class="text-secondary">General consultations serving 250+ patients daily with minimal wait times.</p>
                 </div>
             </div>
-            
             <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-piggy-bank"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-piggy-bank"></i></div>
                     <h5 class="fw-bold mb-3">Alcancia de Parto</h5>
                     <p class="text-secondary">Savings program helping families prepare financially for childbirth.</p>
                 </div>
             </div>
-            
             <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-lungs"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-lungs"></i></div>
                     <h5 class="fw-bold mb-3">TB Program</h5>
                     <p class="text-secondary">Integrated tuberculosis screening and treatment with maternal care.</p>
                 </div>
             </div>
-            
             <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-building"></i></div>
                     <h5 class="fw-bold mb-3">Lying-in Clinics</h5>
                     <p class="text-secondary">Expanding network bringing quality maternal care closer to communities.</p>
                 </div>
@@ -208,8 +196,52 @@
     </div>
 </section>
 
+<!-- Gallery Section -->
+<section id="gallery" class="py-5">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <span class="section-subtitle">Our Gallery</span>
+            <h2 class="section-title">Inside Our Facility</h2>
+            <p class="text-secondary mx-auto" style="max-width: 600px;">Take a look at our modern healthcare environment designed for your comfort and care.</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
+                <a href="assets/system_images/hospital-front.jpg" data-lightbox="gallery" data-title="Hospital Front View">
+                    <img src="assets/system_images/hospital-front.jpg" alt="Hospital Front" class="gallery-img">
+                </a>
+            </div>
+            <div class="col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
+                <a href="assets/system_images/mother-baby.jpg" data-lightbox="gallery" data-title="Mother & Baby Ward">
+                    <img src="assets/system_images/mother-baby.jpg" alt="Mother & Baby" class="gallery-img">
+                </a>
+            </div>
+            <div class="col-md-4 col-6" data-aos="zoom-in" data-aos-delay="300">
+                <a href="assets/system_images/ward.jpg" data-lightbox="gallery" data-title="Patient Ward">
+                    <img src="assets/system_images/ward.jpg" alt="Ward" class="gallery-img">
+                </a>
+            </div>
+            <div class="col-md-4 col-6" data-aos="zoom-in" data-aos-delay="400">
+                <a href="assets/system_images/pedia-ward.jpg" data-lightbox="gallery" data-title="Pediatric Ward">
+                    <img src="assets/system_images/pedia-ward.jpg" alt="Pediatric Ward" class="gallery-img">
+                </a>
+            </div>
+            <div class="col-md-4 col-6" data-aos="zoom-in" data-aos-delay="500">
+                <a href="assets/system_images/ambulance.jpg" data-lightbox="gallery" data-title="Ambulance Service">
+                    <img src="assets/system_images/ambulance.jpg" alt="Ambulance" class="gallery-img">
+                </a>
+            </div>
+            <div class="col-md-4 col-6" data-aos="zoom-in" data-aos-delay="600">
+                <a href="assets/system_images/information-dek.jpg" data-lightbox="gallery" data-title="Information Desk">
+                    <img src="assets/system_images/information-dek.jpg" alt="Information Desk" class="gallery-img">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Facility Section -->
-<section id="facility" class="py-5">
+<section id="facility" class="py-5 bg-light">
     <div class="container">
         <div class="text-center mb-5" data-aos="fade-up">
             <span class="section-subtitle">Our Facility</span>
@@ -218,40 +250,61 @@
         </div>
         
         <div class="row g-4">
-            <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-card text-center">
-                    <i class="fas fa-calendar-alt fa-2x text-primary mb-3"></i>
-                    <h3 class="fw-bold mb-2">1917</h3>
-                    <p class="text-secondary">Established</p>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="facility-card">
+                    <img src="assets/system_images/opd-services.jpg" alt="OPD Services">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Out-Patient Department</h5>
+                        <p class="text-secondary small">Daily consultations for 250+ patients with minimal wait times.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="service-card text-center">
-                    <i class="fas fa-users fa-2x text-primary mb-3"></i>
-                    <h3 class="fw-bold mb-2">250+</h3>
-                    <p class="text-secondary">Daily Capacity</p>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="facility-card">
+                    <img src="assets/system_images/lab-packages.jpg" alt="Laboratory">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Laboratory Services</h5>
+                        <p class="text-secondary small">Complete lab packages for prenatal and general diagnostics.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="service-card text-center">
-                    <i class="fas fa-map-marker-alt fa-2x text-primary mb-3"></i>
-                    <h3 class="fw-bold mb-2">Region's Only</h3>
-                    <p class="text-secondary">Puericulture Center</p>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                <div class="facility-card">
+                    <img src="assets/system_images/services-offered.jpg" alt="Services">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Comprehensive Care</h5>
+                        <p class="text-secondary small">Wide range of maternal and child health services under one roof.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="service-card text-center">
-                    <i class="fas fa-clock fa-2x text-primary mb-3"></i>
-                    <h3 class="fw-bold mb-2">24/7</h3>
-                    <p class="text-secondary">Emergency Care</p>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                <div class="facility-card">
+                    <img src="assets/system_images/ambulance.jpg" alt="Emergency">
+                    <div class="card-body">
+                        <h5 class="fw-bold">24/7 Emergency</h5>
+                        <p class="text-secondary small">Round-the-clock ambulance and emergency services available.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<!-- CTA Banner -->
+<section class="py-5">
+    <div class="container" data-aos="fade-up">
+        <div class="cta-banner">
+            <h2>Ready to Experience Quality Healthcare?</h2>
+            <p class="mb-4">Visit us today or contact our team for inquiries and appointments.</p>
+            <a href="#contact" class="btn btn-white btn-lg">
+                <i class="fas fa-phone-alt me-2"></i>Get in Touch
+            </a>
+        </div>
+    </div>
+</section>
+
 <!-- Contact Section -->
-<section id="contact" class="py-5 bg-light">
+<section id="contact" class="py-5">
     <div class="container">
         <div class="row g-5">
             <div class="col-lg-5" data-aos="fade-right">
@@ -261,32 +314,23 @@
                 
                 <div class="contact-card">
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
                         <div>
                             <p class="small text-secondary mb-1">PHONE</p>
                             <p class="fw-semibold mb-0">(062) 991 0379</p>
-                            <p class="small text-secondary">Mon-Fri, 8am-5pm and Sat at 8am-12pm</p>
+                            <p class="small text-secondary">Mon-Fri, 8am-5pm | Sat 8am-12pm</p>
                         </div>
                     </div>
-                    
-                    
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                         <div>
                             <p class="small text-secondary mb-1">EMAIL</p>
                             <p class="fw-semibold mb-0">zpc144hr@gmail.com</p>
                             <p class="small text-secondary">Response within 24 hours</p>
                         </div>
                     </div>
-                    
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                         <div>
                             <p class="small text-secondary mb-1">ADDRESS</p>
                             <p class="fw-semibold mb-0">La Purisima Street, Zamboanga City, 7000</p>
@@ -299,17 +343,11 @@
             <div class="col-lg-7" data-aos="fade-left">
                 <div class="contact-card h-100">
                     <h5 class="fw-bold mb-4">Location & Hours</h5>
-                    <!-- Accurate Google Map Embed -->
                     <div class="map-container ratio ratio-16x9 mb-4">
                         <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.800693795701!2d122.0730394!3d6.9071992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3250426b2b2d3f29%3A0x6b4ede3b0b21729!2sZamboanga%20Puericulture%20Center%20Maternity%20Lying-in%20Hospital!5e0!3m2!1sen!2sph!4v1745446123456!5m2!1sen!2sph" 
-                            width="600" 
-                            height="450" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="row">
                         <div class="col-6">
@@ -350,6 +388,7 @@
                     <li class="mb-2"><a href="#home">Home</a></li>
                     <li class="mb-2"><a href="#about">About Us</a></li>
                     <li class="mb-2"><a href="#services">Services</a></li>
+                    <li class="mb-2"><a href="#gallery">Gallery</a></li>
                     <li class="mb-2"><a href="#facility">Facility</a></li>
                 </ul>
             </div>
@@ -380,11 +419,10 @@
 
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<!-- AOS Animation JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 
 <script>
-    // Initialize AOS animations
     AOS.init({
         duration: 800,
         once: true,
@@ -392,18 +430,14 @@
         easing: 'ease-out-cubic'
     });
     
-    // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const targetId = this.getAttribute('href');
             if (targetId === '#' || targetId === '') return;
-            
             const target = document.querySelector(targetId);
             if (target) {
                 e.preventDefault();
                 target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                
-                // Close mobile menu
                 const navbarCollapse = document.querySelector('.navbar-collapse');
                 if (navbarCollapse.classList.contains('show')) {
                     navbarCollapse.classList.remove('show');
