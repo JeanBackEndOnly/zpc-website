@@ -60,14 +60,22 @@
                     Where Every <span class="highlight">Mother & Child</span><br>
                     Receives Compassionate Care
                 </h1>
-                <p class="lead text-secondary mb-5">
+                <p class="lead text-secondary mb-4">
                     Zamboanga's premier maternal and child healthcare facility, providing quality medical services 
                     to underserved communities for over a century.
                 </p>
-                <div class="d-flex flex-wrap gap-3">
-                    <a href="#about" class="btn btn-primary px-5 py-3">Discover More</a>
-                    <a href="#contact" class="btn btn-outline px-5 py-3">Contact Us</a>
+                <div class="d-flex flex-wrap gap-3 mb-3">
+                    <a href="#about" class="btn btn-primary px-4 py-3">Discover More</a>
+                    <a href="#contact" class="btn btn-outline px-4 py-3">Contact Us</a>
                 </div>
+                <button class="btn px-4 py-3 fw-bold text-white border-0"
+                        data-bs-toggle="modal"
+                        data-bs-target="#ansap_registration"
+                        style="background: linear-gradient(135deg, #0ea5e9, #0284c7); border-radius: 50px; font-size: 1rem; box-shadow: 0 6px 20px rgba(14, 165, 233, 0.3); transition: all 0.3s ease;"
+                        onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 10px 30px rgba(14, 165, 233, 0.4)';"
+                        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 20px rgba(14, 165, 233, 0.3)';">
+                    <i class="fas fa-syringe me-2"></i> Register for IVT Training
+                </button>
                 
                 <!-- Stats -->
                 <div class="row mt-5">
@@ -277,7 +285,7 @@
 </section>
 
 <!-- Ansap Ivt Provider Section -->
-<section id="annsap" class="py-5">
+<section id="ansap" class="py-5">
     <div class="container">
         <div class="text-center mb-5" data-aos="fade-up">
             <span class="section-subtitle">Zamboanga Puericulture Center Org. No.144 Inc. CH</span>
@@ -286,19 +294,214 @@
                 ANSAP IVT PROVIDER
                 <img src="assets/system_images/annsap-logo.png" class="ansap-logo">    
             </h2>
-            <p class="text-secondary mx-auto" style="max-width: 600px;">Take a look at our modern healthcare environment designed for your comfort and care.</p>
+            <p class="text-secondary mx-auto" style="max-width: 600px;">An accredited ANSAP IVT Provider, dedicated to delivering quality intravenous therapy training for healthcare professionals.</p>
         </div>
         
         <div class="row g-4">
             <div class="col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
-                <a href="assets/system_images/tools.JPG" data-lightbox="gallery" data-title="Hospital Front View">
-                    <img src="assets/system_images/tools.JPG" alt="Hospital Front" class="gallery-img">
+                <a href="assets/system_images/ansap3.png" data-lightbox="gallery" data-title="Hospital Front View">
+                    <img src="assets/system_images/ansap3.png" alt="Hospital Front" class="gallery-img">
                 </a>
             </div>
-            
+            <div class="col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
+                <a href="assets/system_images/annnsap2.jpg" data-lightbox="gallery" data-title="Hospital Front View">
+                    <img src="assets/system_images/annnsap2.jpg" alt="Hospital Front" class="gallery-img">
+                </a>
+            </div>
+            <div class="col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
+                <a href="assets/system_images/ansap1.jpg" data-lightbox="gallery" data-title="Hospital Front View">
+                    <img src="assets/system_images/ansap1.jpg" alt="Hospital Front" class="gallery-img">
+                </a>
+            </div>
         </div>
+        <button class="btn px-5 py-3 mt-4 fw-bold text-white border-0"
+                data-bs-toggle="modal"
+                data-bs-target="#ansap_registration"
+                style="background: linear-gradient(135deg, #0ea5e9, #0284c7); border-radius: 50px; font-size: 1.1rem; box-shadow: 0 6px 20px rgba(14, 165, 233, 0.3); transition: all 0.3s ease;"
+                onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 10px 30px rgba(14, 165, 233, 0.4)';"
+                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 20px rgba(14, 165, 233, 0.3)';">
+            <i class="fas fa-syringe me-2"></i> Register for IVT Training
+        </button>
     </div>
 </section>
+
+<!-- Ansap Registration Modal -->
+<div class="modal fade" id="ansap_registration" tabindex="-1" aria-labelledby="ansap_registrationLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content border-0 shadow-lg" style="border-radius: 20px; overflow: hidden;">
+            
+            <!-- Header -->
+            <div class="modal-header border-0 text-white" style="background: linear-gradient(135deg, #0ea5e9, #0284c7);">
+                <div class="d-flex align-items-center gap-3">
+                    <div style="width: 45px; height: 45px; background: rgba(255,255,255,0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-syringe text-white fs-5"></i>
+                    </div>
+                    <div>
+                        <h5 class="modal-title fw-bold text-white" id="ansap_registrationLabel">ANSAP IVT Provider Registration</h5>
+                        <small class="text-white-50">Association of Nursing Service Administrators of the Philippines</small>
+                    </div>
+                </div>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <!-- Body -->
+            <form id="ansap-register" style="background: #f8fafc;">
+                <div class="modal-body p-4 p-lg-5">
+                    
+                    <!-- ANSAP Logos -->
+                    <div class="text-center mb-4">
+                        <div class="d-flex justify-content-center align-items-center gap-4">
+                            <img src="assets/system_images/hospital-logo.png" alt="Hospital Logo" style="height: 50px;">
+                            <span class="fw-bold text-secondary">ANSAP IVT PROVIDER</span>
+                            <img src="assets/system_images/annsap-logo.png" alt="ANSAP Logo" style="height: 50px;">
+                        </div>
+                        <hr class="my-3" style="border-color: #e2e8f0;">
+                        <p class="text-secondary small mb-0">Please fill out all required fields marked with <span class="text-danger">*</span></p>
+                    </div>
+                    
+                    <!-- Personal Information -->
+                    <h6 class="fw-bold text-dark mb-3">
+                        <i class="fas fa-user-circle text-primary me-2"></i>Personal Information
+                    </h6>
+                    
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4">
+                            <label class="form-label fw-semibold small text-secondary">First Name <span class="text-danger">*</span></label>
+                            <input type="text" name="firstname" class="form-control" placeholder="Juan" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label fw-semibold small text-secondary">Middle Name</label>
+                            <input type="text" name="middlename" class="form-control" placeholder="Santos">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label fw-semibold small text-secondary">Last Name <span class="text-danger">*</span></label>
+                            <input type="text" name="lastname" class="form-control" placeholder="Dela Cruz" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4">
+                            <label class="form-label fw-semibold small text-secondary">Date of Birth <span class="text-danger">*</span></label>
+                            <input type="date" name="birthday" class="form-control" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label fw-semibold small text-secondary">Sex <span class="text-danger">*</span></label>
+                            <select name="sex" class="form-select" required>
+                                <option value="">Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label fw-semibold small text-secondary">Contact # <span class="text-danger">*</span></label>
+                            <input type="text" name="contact" class="form-control" placeholder="0912 345 6789" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold small text-secondary">Email Address <span class="text-danger">*</span></label>
+                            <input type="email" name="email" class="form-control" placeholder="juan@email.com" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold small text-secondary">Complete Address</label>
+                            <input type="text" name="address" class="form-control" placeholder="Zamboanga City">
+                        </div>
+                    </div>
+                    
+                    <hr style="border-color: #e2e8f0;">
+                    
+                    <!-- Professional Information -->
+                    <h6 class="fw-bold text-dark mb-3">
+                        <i class="fas fa-id-badge text-primary me-2"></i>Professional Information
+                    </h6>
+                    
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold small text-secondary">PRC License Number <span class="text-danger">*</span></label>
+                            <input type="text" name="prc_license" class="form-control" placeholder="e.g., 0912345" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold small text-secondary">Profession <span class="text-danger">*</span></label>
+                            <select name="profession" class="form-select" required>
+                                <option value="">Select Profession</option>
+                                <option value="rn">Registered Nurse (RN)</option>
+                                <option value="rm">Registered Midwife (RM)</option>
+                                <option value="md">Medical Doctor (MD)</option>
+                                <option value="pharmacist">Pharmacist</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold small text-secondary">Current Hospital/Clinic <span class="text-danger">*</span></label>
+                            <input type="text" name="hospital" class="form-control" placeholder="e.g., Zamboanga Puericulture Center" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold small text-secondary">Years of Experience</label>
+                            <input type="number" name="experience_years" class="form-control" placeholder="e.g., 3" min="0">
+                        </div>
+                    </div>
+                    
+                    <hr style="border-color: #e2e8f0;">
+                    
+                    <!-- Course Preferences -->
+                    <h6 class="fw-bold text-dark mb-3">
+                        <i class="fas fa-calendar-alt text-primary me-2"></i>Course Preferences
+                    </h6>
+                    
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold small text-secondary">Preferred Batch <span class="text-danger">*</span></label>
+                            <select name="batch" class="form-select" required>
+                                <option value="">Select Batch</option>
+                                <option value="batch_january">Batch 1 - January 2026</option>
+                                <option value="batch_february">Batch 2 - February 2026</option>
+                                <option value="batch_march">Batch 3 - March 2026</option>
+                                <option value="batch_april">Batch 4 - April 2026</option>
+                                <option value="batch_may">Batch 5 - May 2026</option>
+                                <option value="batch_june">Batch 6 - June 2026</option>
+                                <option value="batch_july">Batch 7 - July 2026</option>
+                                <option value="batch_august">Batch 8 - August 2026</option>
+                                <option value="batch_september">Batch 9 - September 2026</option>
+                                <option value="batch_october">Batch 10 - October 2026</option>
+                                <option value="batch_november">Batch 11 - November 2026</option>
+                                <option value="batch_december">Batch 12 - December 2026</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold small text-secondary">How did you hear about us?</label>
+                            <select name="referral_source" class="form-select">
+                                <option value="">Select</option>
+                                <option value="facebook">Facebook</option>
+                                <option value="hospital">Hospital Referral</option>
+                                <option value="colleague">Colleague/Friend</option>
+                                <option value="website">Website</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Footer -->
+                <div class="modal-footer border-0 px-4 px-lg-5 pb-4 pt-0" style="background: #f8fafc;">
+                    <button type="button" class="btn btn-secondary px-4" data-bs-dismiss="modal"
+                            style="border-radius: 12px; padding: 0.6rem 1.5rem; font-weight: 600;">
+                        <i class="fas fa-times me-2"></i>Cancel
+                    </button>
+                    <button type="submit" class="btn px-4 text-white"
+                            style="background: linear-gradient(135deg, #0ea5e9, #0284c7); border-radius: 12px; padding: 0.6rem 1.5rem; font-weight: 600; border: none; box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);">
+                        <i class="fas fa-paper-plane me-2"></i>Submit Registration
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 
 <!-- Facility Section -->
 <section id="facility" class="py-5 bg-light">
@@ -476,11 +679,120 @@
         </div>
     </div>
 </footer>
+<!-- toast notification -->
+<div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 9999;">
+
+    <div id="successToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                <i class="fas fa-check-circle me-2"></i>
+                <span id="successMessage">Registration submitted successfully!</span>
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+    
+    <div id="errorToast" class="toast align-items-center text-bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                <i class="fas fa-exclamation-triangle me-2"></i>
+                <span id="errorMessage">Something went wrong. Please try again.</span>
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+    
+    <div id="loadingToast" class="toast align-items-center text-bg-info border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                <i class="fas fa-spinner fa-spin me-2"></i>
+                <span>Submitting your registration...</span>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+<script>
+document.getElementById('ansap-register').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const formData = {
+        firstname: this.querySelector('[name="firstname"]').value,
+        middlename: this.querySelector('[name="middlename"]').value,
+        lastname: this.querySelector('[name="lastname"]').value,
+        birthday: this.querySelector('[name="birthday"]').value,
+        sex: this.querySelector('[name="sex"]').value,
+        contact: this.querySelector('[name="contact"]').value,
+        email: this.querySelector('[name="email"]').value,
+        address: this.querySelector('[name="address"]').value,
+        prc_license: this.querySelector('[name="prc_license"]').value,
+        profession: this.querySelector('[name="profession"]').value,
+        hospital: this.querySelector('[name="hospital"]').value,
+        experience_years: this.querySelector('[name="experience_years"]').value,
+        batch: this.querySelector('[name="batch"]').value,
+        referral_source: this.querySelector('[name="referral_source"]').value,
+    };
+    
+    showToast('loadingToast');
+    
+    const submitBtn = this.querySelector('[type="submit"]');
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Submitting...';
+    submitBtn.disabled = true;
+    
+    const API_URL = 'https://script.google.com/macros/s/AKfycbxf9aC9DbIkB6qHMRhlcz6x9uZZiHFa8yfdbGzV8EBSNaAxFcCZDoT_VLU2dCxANLRHyA/exec';
+    
+    fetch(API_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(() => {
+        hideToast('loadingToast');
+        showToast('successToast');
+        this.reset();
+        
+        setTimeout(() => {
+            const modal = bootstrap.Modal.getInstance(document.getElementById('ansap_registration'));
+            modal.hide();
+        }, 1500);
+    })
+    .catch(error => {
+        hideToast('loadingToast');
+        showToast('errorToast');
+        console.error('Error:', error);
+    })
+    .finally(() => {
+        submitBtn.innerHTML = '<i class="fas fa-paper-plane me-2"></i>Submit Registration';
+        submitBtn.disabled = false;
+    });
+});
+
+function showToast(toastId) {
+    const toastElement = document.getElementById(toastId);
+    const toast = new bootstrap.Toast(toastElement, {
+        delay: 3000,
+        animation: true
+    });
+    toast.show();
+}
+
+function hideToast(toastId) {
+    const toastElement = document.getElementById(toastId);
+    const toast = bootstrap.Toast.getInstance(toastElement);
+    if (toast) {
+        toast.hide();
+    }
+}
+</script>
 
 <script>
     AOS.init({
